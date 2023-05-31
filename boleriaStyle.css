@@ -1,0 +1,295 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    background-image: url("imagens/Fundo nuvem.jpg");
+    background-color: #dcfaff;
+    margin: 0;
+}
+
+a{
+    font-style: bold;
+    font-family: Candara, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(48, 32, 30);
+    text-align: center;
+}
+
+h2{
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(82, 49, 44); 
+}
+.h2{
+    background-color: rgb(68, 47, 47);
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    border-color: #8f6d51;
+    border-style: solid;
+
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    color: rgb(255, 231, 219);
+}
+
+.h2v1{
+    width: 250px;
+    background-color: rgb(223, 182, 172);
+    border: 8px;
+    border-radius: 50px;
+    border-right-style: solid;
+    border-left-style: solid;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: cursive;
+    color: rgb(82, 49, 44); 
+}
+
+
+p{
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    font-family: Candara, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(82, 49, 44); 
+    text-align: center;
+}
+
+p img{
+    margin-top: -70px;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+
+    background-color: #faeaff;
+    border-radius: 10px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    /* border-color: #8f6d51; */
+    border-color: rgb(71, 54, 54);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.topo{
+    display: flex;
+    background-color: rgb(68, 47, 47);
+    /* margin-bottom: 20px; */
+
+    border-color: #8f6d51;
+    border-bottom-style: solid;
+
+    font-size: 18px;
+    font-family: Candara, Helvetica, sans-serif;
+    color: rgb(255, 231, 219);
+
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.rodape{
+    display: flex;
+    background-color: rgb(68, 47, 47);
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+
+    padding-top: 10px;
+    border-color: #8f6d51;
+    border-top-style: solid;
+
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: Candara, Helvetica, sans-serif;
+    color: rgb(255, 231, 219);
+
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.3);
+    height: 80px;
+}
+
+.deliciasRe{
+    margin-left: 30%;
+    text-align: center;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.menu{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 125px;
+
+    font-size: 18px;
+    font-family: Candara, Helvetica, sans-serif;
+    color: rgb(255, 231, 219);
+
+}
+
+.menu a{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    text-decoration: none;
+    color: rgb(255, 231, 219);;
+    transition: background-color .5s;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    border-radius: 10px;
+    background-color: rgb(255, 231, 219);
+    color: rgb(68, 47, 47);
+}
+
+.card{
+    background-color: rgb(255, 240, 232);
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 13px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card1{
+    justify-content: center;
+    display: flex;
+    padding: auto;
+}
+
+.card2{
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.card3{
+    justify-content: center;
+    display: flex;
+}
+
+.card3 img {
+    width: 500px;
+    height: 500px;
+}
+
+#telefone{ 
+    position: fixed; 
+    bottom: -10px; 
+    right: 10px; 
+    height: 100px; 
+    width: 500px; 
+} 
+  
+#telefone img{ 
+    position: absolute; 
+    right: 1px; 
+    width: 75px; 
+} 
+  
+#telefone img:hover + #tel{ /* O mais (+) só funciona um do lado do outro*/
+     opacity: 1; 
+}
+  
+#telefone a{ 
+    text-decoration: none; 
+}
+  
+#tel{ 
+    background-color: #86df70; 
+    height: auto;
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    margin-top: 15px;
+    padding: 5px; 
+    position: absolute;
+    opacity: 0; 
+    transition: opacity .5s; 
+} 
+  
+#tel p{
+    margin: 0;
+}
+  
+@media screen and (max-width: 1600px){
+    .card{
+        margin: 0;
+    }
+    .card1{
+        display: grid;
+        margin: 25px 50px 25px 50px;
+    }
+    p{
+        width: 900px;
+    }
+    .h2v1{
+        width: 250px;
+    }
+    .deliciasRe{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 1050px){ 
+    .h2v1{
+        width: 250px;
+    }
+    p{
+        width: 600px;
+    }
+    .deliciasRe{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 900px){ 
+    .h2{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    #telefone{ 
+        width: 430px; 
+    }
+    .menu{
+        margin-left: 50px;
+    }
+    .deliciasRe{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 610px){
+    p{
+        width: 300px;
+    }
+    #telefone{ 
+        width: 430px; 
+    }
+    .menu{
+        margin-left: 10px;
+    }
+    .deliciasRe{
+        margin-left: 10%;
+    }
+}
